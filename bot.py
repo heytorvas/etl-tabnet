@@ -408,7 +408,7 @@ def get_table_data_SIM(browser, disease):
 
 def convert_to_csv(disease_data, filename):
     keys = disease_data[0].keys()
-    with open('csv/{}.csv'.format(filename), 'w', newline='')  as output_file:
+    with open('csv2/{}.csv'.format(filename), 'w', newline='')  as output_file:
         dict_writer = csv.DictWriter(output_file, keys)
         dict_writer.writeheader()
         dict_writer.writerows(disease_data)

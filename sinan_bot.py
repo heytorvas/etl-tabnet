@@ -1,6 +1,8 @@
 from bot import *
 from time import sleep
 from slugify import slugify
+from bs4 import BeautifulSoup
+import requests
 
 def get_diseases_list():
     URL = 'http://vigilancia.saude.mg.gov.br/index.php/informacoes-de-saude/informacoes-de-saude-tabnet-mg/'
